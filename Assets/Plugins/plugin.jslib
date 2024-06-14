@@ -20,6 +20,9 @@ mergeInto(LibraryManager.library,
     {
         // Replace 'Engine' with the name of the GameObject in Unity that has the script
         // Replace 'StartGameButtonClicked' with the name of the method you want to call in your C# script
-        SendMessage('Engine', 'StartGameButtonClicked');
+	window.StartGameThroughButton = function() 
+	{
+        	SendMessage('Engine', 'StartGameButtonClicked');
+    	}	
     }
 });

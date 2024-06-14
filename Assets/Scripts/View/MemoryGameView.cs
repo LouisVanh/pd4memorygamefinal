@@ -58,14 +58,18 @@ namespace MemoryGame.View
             _memoryBoardModel.Players = players;
         }
 
-        public void StartGameButtonClicked()
+        public void StartGameButtonClicked() // CALLED FROM JSLIB PLUGIN BUTTON ON HTML
         {
-            InitializePlayers();
-            Time.timeScale = 1;
-            Debug.Log("START BUTTON CLICKED!");
-            _memoryBoardModel.BoardState = new BoardNoPreviewState(_memoryBoardModel);
-
-            // maybe assign new state?
+            if (_memoryBoardModel.BoardState.State == BoardStates.WaitStart)
+            {
+                InitializePlayers();
+                Time.timeScale = 1;
+                Debug.Log("START BUTTON CLICKED! GAME STARTING");
+                _memoryBoardModel.BoardState = new BoardNoPreviewState(_memoryBoardModel);
+            }
+            // MOVE INTO TOP IF YOU DON'T WANT TO UPDATE AGAIN ON RUNTIME
+            UpdateName1();
+            UpdateName2();
         }
         private void Update()
         {
