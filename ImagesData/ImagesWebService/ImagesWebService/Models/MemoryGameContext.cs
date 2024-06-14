@@ -21,6 +21,8 @@ namespace ImagesWebService.Models
         }
 
         public virtual DbSet<Image> Images { get; set; } = null!;
+        public virtual DbSet<PlaySessionNames> PlaySessionNames { get; set; } = null!;
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -42,6 +44,9 @@ namespace ImagesWebService.Models
 
                 entity.Property(e => e.Name).HasMaxLength(60);
             });
+
+            modelBuilder.Entity<PlaySessionNames>(entity =>
+            entity.HasKey(e => e.Id));
 
             OnModelCreatingPartial(modelBuilder);
         }

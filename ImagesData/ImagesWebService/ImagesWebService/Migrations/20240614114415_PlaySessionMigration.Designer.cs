@@ -4,6 +4,7 @@ using ImagesWebService.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImagesWebService.Migrations
 {
     [DbContext(typeof(MemoryGameContext))]
-    partial class MemoryGameContextModelSnapshot : ModelSnapshot
+    [Migration("20240614114415_PlaySessionMigration")]
+    partial class PlaySessionMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
