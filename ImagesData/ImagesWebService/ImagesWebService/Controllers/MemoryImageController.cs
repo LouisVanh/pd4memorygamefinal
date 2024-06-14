@@ -23,11 +23,14 @@ namespace ImagesWebService.Controllers
             //return Content(test);
         }
 
+        //[EnableCors("PolicyAll")] // allows any webservice to access this
         [HttpGet]
         public DbSet<Image> Get()
         {
             MemoryGameContext ctx = new MemoryGameContext();
             return ctx.Images;
         }
+
+
     }
 }
