@@ -7,7 +7,7 @@ namespace FillingImageTable
     {
 
         private static string _connectionString = "Server=localHost;Database=MemoryGame;Trusted_Connection=True;TrustServerCertificate=True";
-        private static string _imageDirectory = "C:\\Users\\vanho\\Desktop\\UnityProjects\\PD4MemoryGame\\PD4 MemoryGame\\ImagesData\\Images";
+        private static string _imageDirectory = "C:\\Users\\vanho\\Desktop\\UnityProjects\\PD4MemoryGame\\pd4memorygamefinal\\ImagesData\\Images"; //UPDATE WHEN MOVING folders!
         static void Main(string[] args)
         {
             LoadImagesFrom(_imageDirectory);

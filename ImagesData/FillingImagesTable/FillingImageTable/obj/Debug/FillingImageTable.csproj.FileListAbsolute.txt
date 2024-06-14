@@ -5,3 +5,10 @@ C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\PD4 MemoryGame\ImagesData\Fil
 C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\PD4 MemoryGame\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.csproj.CoreCompileInputs.cache
 C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\PD4 MemoryGame\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.exe
 C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\PD4 MemoryGame\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.pdb
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\bin\Debug\FillingImageTable.exe.config
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\bin\Debug\FillingImageTable.exe
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\bin\Debug\FillingImageTable.pdb
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.csproj.AssemblyReference.cache
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.csproj.CoreCompileInputs.cache
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.exe
+C:\Users\vanho\Desktop\UnityProjects\PD4MemoryGame\pd4memorygamefinal\ImagesData\FillingImagesTable\FillingImageTable\obj\Debug\FillingImageTable.pdb
