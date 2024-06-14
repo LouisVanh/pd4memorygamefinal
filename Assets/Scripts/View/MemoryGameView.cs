@@ -1,10 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MemoryGame.Model;
-using System.Collections;
 using System.Runtime.InteropServices;
 using MemoryGame.Model.States;
-
 namespace MemoryGame.View
 {
     public class MemoryGameView : MonoBehaviour
@@ -59,13 +57,13 @@ namespace MemoryGame.View
         }
         public void SavePlayerNames(string playerName1, string playerName2)
         {
-            PlaySessionNames sessionName = new PlaySessionNames
-            {
-                Name1 = playerName1,
-                Name2 = playerName2
-            };
+            //PlaySessionNames sessionName = new PlaySessionNames
+            //{
+            //    Name1 = playerName1,
+            //    Name2 = playerName2
+            //};
 
-            StartCoroutine(PostRequest(sessionName));
+            //StartCoroutine(PostRequest(sessionName));
         }
 
         public void StartGameButtonClicked() // CALLED FROM JSLIB PLUGIN BUTTON ON HTML
