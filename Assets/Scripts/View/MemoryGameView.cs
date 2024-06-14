@@ -57,6 +57,16 @@ namespace MemoryGame.View
 
             _memoryBoardModel.Players = players;
         }
+        public void SavePlayerNames(string playerName1, string playerName2)
+        {
+            PlaySessionNames sessionName = new PlaySessionNames
+            {
+                Name1 = playerName1,
+                Name2 = playerName2
+            };
+
+            StartCoroutine(PostRequest(sessionName));
+        }
 
         public void StartGameButtonClicked() // CALLED FROM JSLIB PLUGIN BUTTON ON HTML
         {
@@ -68,8 +78,8 @@ namespace MemoryGame.View
                 _memoryBoardModel.BoardState = new BoardNoPreviewState(_memoryBoardModel);
             }
             // MOVE INTO TOP IF YOU DON'T WANT TO UPDATE AGAIN ON RUNTIME
-            UpdateName1();
-            UpdateName2();
+            _playerView1.Model.Name = UpdateName1();
+            _playerView2.Model.Name = UpdateName2();
         }
         private void Update()
         {
