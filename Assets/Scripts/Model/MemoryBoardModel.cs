@@ -44,7 +44,7 @@ namespace MemoryGame.Model
         public int ActivePlayer = 0;
 
 
-        public MemoryBoardModel(int rows, int columns)
+        public MemoryBoardModel(int rows, int columns) // CREATION OF THE MEMORY BOARD MODEL (CONSTRUCTOR)
         {
             Rows = rows;
             Columns = columns;
@@ -59,7 +59,9 @@ namespace MemoryGame.Model
                 }
             }
 
-            BoardState = new BoardNoPreviewState(this);
+            // Change this for exam: BoardWaitStartState
+            //BoardState = new BoardNoPreviewState(this);
+            BoardState = new BoardWaitStartState(this);
             AssignMemoryCardIds();
         }
         private void AssignMemoryCardIds()

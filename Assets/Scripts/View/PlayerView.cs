@@ -24,7 +24,6 @@ namespace MemoryGame.View
             _playerName.text = Model.Name;
             _playerScore.text = $"Score: {Model.Score.ToString()}";
             _playerTime.text = $"Time: {Model.mm.ToString("D2")}:{Model.ss.ToString("D2")}:{Model.ms.ToString("D3")}";
-            //_playerTime.text = $"Time: {Model.Elapsed}";
         }
 
         private void UpdateFontStyle()
@@ -44,6 +43,12 @@ namespace MemoryGame.View
         }
 
         private void Update()
+        {
+            if (Model == null) return; // GAME NOT STARTED YET
+            UpdateTimerCurrentPlayer();
+        }
+
+        private void UpdateTimerCurrentPlayer()
         {
             if (Model.IsActive)
             {

@@ -9,6 +9,7 @@ namespace MemoryGame.Model.States
 
     public enum BoardStates
     {
+        WaitStart,
         NoPreview,
         OnePreview,
         TwoPreview,

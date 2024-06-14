@@ -4,21 +4,22 @@ namespace MemoryGame.Model.States
     {
         public BoardNoPreviewState(MemoryBoardModel board) : base(board)
         {
+            // When the no preview state is enabled (constructed) --) could be on start, or after twofound/twohidden
             ToggleActivePlayer(board);
         }
 
         public override BoardStates State => BoardStates.NoPreview;
 
-        public override void AddPreview(TileModel card)
+        public override void AddPreview(TileModel tile)
         {
-            if (card.State.State != TileStates.Hidden)
+            if (tile.State.State != TileStates.Hidden)
             {
                 return;
             }
 
-            card.State = new TilePreviewState(card);
-            card.Board.PreviewTiles.Add(card);
-            card.Board.BoardState = new BoardOnePreviewState(card.Board);
+            tile.State = new TilePreviewState(tile);
+            tile.Board.PreviewTiles.Add(tile);
+            tile.Board.BoardState = new BoardOnePreviewState(tile.Board);
 
         }
 
@@ -28,7 +29,7 @@ namespace MemoryGame.Model.States
         }
         private void ToggleActivePlayer(MemoryBoardModel board)
         {
-            if (board.Players != null && board.Players.Count > 0)
+            if (board.Players != null && board.Players.Count > 0) // if there's players
             {
                 board.ActivePlayer += 1;
                 if (board.ActivePlayer >= board.Players.Count)
